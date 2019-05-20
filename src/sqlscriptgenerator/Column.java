@@ -10,8 +10,8 @@ public abstract class Column {
     public void setColumnName(String columnName){
         this.columnName = columnName;
     }
-    public void getColumnName(String columnName){
-        this.columnName = columnName;
+    public String getColumnName(){
+        return columnName;
     }
     public abstract String generateValue();
 }

@@ -12,9 +12,13 @@ public abstract class SQLScript {
         this.tableName = tableName;
     }
     public String getTableName(){
-        return tableName;
+        return "`"+tableName+"`";
     }
     public void addColumn(Column column){
         columns.add(column);
     }
+    public ArrayList<Column> getColumns(){
+        return columns;
+    }
+    public abstract String createScript();
 }
