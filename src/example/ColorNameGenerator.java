@@ -2,8 +2,8 @@ package example;
 
 import sqlscriptgenerator.Column;
 
-public class NameGenerator extends Column {
-    public NameGenerator(String columnName){
+public class ColorNameGenerator extends Column {
+    public ColorNameGenerator(String columnName){
         super(columnName);
     }
     @Override
@@ -11,6 +11,6 @@ public class NameGenerator extends Column {
         /*TODO
             create random generator
         * */
-        return "'Maria'";
+        return "'Blue'";
     }
 }

@@ -2,8 +2,8 @@ package example;
 
 import sqlscriptgenerator.Column;
 
-public class NameGenerator extends Column {
-    public NameGenerator(String columnName){
+public class PhoneNumberGenerator extends Column {
+    public PhoneNumberGenerator(String columnName){
         super(columnName);
     }
     @Override
@@ -11,6 +11,6 @@ public class NameGenerator extends Column {
         /*TODO
             create random generator
         * */
-        return "'Maria'";
+        return "'599-520-2330'";
     }
 }
