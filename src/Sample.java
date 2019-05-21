@@ -9,6 +9,7 @@ public class Sample {
         ColorNameGenerator colorNameColumn = new ColorNameGenerator("colorName");
         PhoneNumberGenerator phoneNumberGenerator = new PhoneNumberGenerator("phoneNumber");
         Insert insert = new Insert("MyTable");
+        insert.setDataQuantity(5);
         insert.addColumn(nameColumn);
         insert.addColumn(colorNameColumn);
         insert.addColumn(phoneNumberGenerator);

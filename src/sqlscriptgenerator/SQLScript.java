@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public abstract class SQLScript {
     private ArrayList<Column> columns = new ArrayList<Column>();
     private String tableName;
+    private int dataQuantity;
     public SQLScript(String tableName){
         setTableName(tableName);
     }
@@ -19,6 +20,12 @@ public abstract class SQLScript {
     }
     public ArrayList<Column> getColumns(){
         return columns;
+    }
+    public int getDataQuantity() {
+        return dataQuantity;
+    }
+    public void setDataQuantity(int dataQuantity) {
+        this.dataQuantity = dataQuantity;
     }
     public abstract String createScript();
 }
