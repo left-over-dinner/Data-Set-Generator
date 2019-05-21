@@ -6,7 +6,9 @@ public abstract class Column {
     public Column(String columnName) {
         setColumnName(columnName);
     }
-
+    public int randomNumber(int min, int max){
+        return (int)(Math.random() * max + min);
+    }
     public void setColumnName(String columnName){
         this.columnName = columnName;
     }

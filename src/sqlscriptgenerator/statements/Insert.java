@@ -1,10 +1,7 @@
 package sqlscriptgenerator.statements;
-
 import sqlscriptgenerator.Column;
 import sqlscriptgenerator.SQLScript;
-
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Insert extends SQLScript {
     public Insert(String tableName){
